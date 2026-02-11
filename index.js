@@ -13,16 +13,16 @@ app.get('/', (req, res) => {
 
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
-            return res.status(500).json({ error: "Arquivo não encontrado." });
+            return res.status(500).json({ error: "File not found." });
         }
         try {
             res.json(JSON.parse(data));
         } catch (parseErr) {
-            res.status(500).json({ error: "Erro no formato do JSON." });
+            res.status(500).json({ error: "Error on JSON file format." });
         }
     });
 });
 
 app.listen(PORT, () => {
-    console.log(`✅ Servidor de dados rodando em:${PORT}`);
+    console.log(`Server is running on port:${PORT}`);
 });
