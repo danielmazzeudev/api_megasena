@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000; // Alterei para não conflitar com o Next.js
 
 app.use(cors());
 
@@ -13,19 +13,16 @@ app.get('/', (req, res) => {
 
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
-            console.error("Error reading file:", err);
-            return res.status(500).json({ error: "Error reading database." });
+            return res.status(500).json({ error: "Arquivo não encontrado." });
         }
-
         try {
-            const jsonData = JSON.parse(data);
-            res.json(jsonData);
+            res.json(JSON.parse(data));
         } catch (parseErr) {
-            res.status(500).json({ error: "Invalid JSON format." });
+            res.status(500).json({ error: "Erro no formato do JSON." });
         }
     });
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on port:${PORT}`);
+    console.log(`✅ Servidor de dados rodando em:${PORT}`);
 });
