@@ -9,7 +9,7 @@ const PORT = 4000;
 app.use(cors());
 
 app.get('/', (req, res) => {
-    const filePath = path.join(__dirname, 'megasena.json');
+    const filePath = path.join(__dirname, 'python/megasena.json');
 
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
