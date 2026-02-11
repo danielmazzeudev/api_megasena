@@ -56428,5 +56428,24 @@
         "prize_value_5_numbers": 103128.37,
         "prize_value_6_numbers": 0.0,
         "accumulated_prize_value": 40111823.36
+    },
+    {
+        "draw_number": 2971,
+        "draw_date": "10/02/2026",
+        "numbers": [
+            "01",
+            "27",
+            "39",
+            "40",
+            "46",
+            "56"
+        ],
+        "winners_4_numbers": 2294,
+        "winners_5_numbers": 33,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1542.26,
+        "prize_value_5_numbers": 65041.25,
+        "prize_value_6_numbers": 0.0,
+        "accumulated_prize_value": 46716011.96
     }
 ]
