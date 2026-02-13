@@ -56447,5 +56447,24 @@
         "prize_value_5_numbers": 65041.25,
         "prize_value_6_numbers": 0.0,
         "accumulated_prize_value": 46716011.96
+    },
+    {
+        "draw_number": 2972,
+        "draw_date": "12/02/2026",
+        "numbers": [
+            "09",
+            "10",
+            "15",
+            "46",
+            "49",
+            "51"
+        ],
+        "winners_4_numbers": 3582,
+        "winners_5_numbers": 55,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1044.39,
+        "prize_value_5_numbers": 41264.65,
+        "prize_value_6_numbers": 0.0,
+        "accumulated_prize_value": 53699259.97
     }
 ]
