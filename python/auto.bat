@@ -13,5 +13,6 @@ git commit -am "Update"
 git push
 
 echo.
-echo Processo concluido!
-pause
+echo Processo concluido! Tudo pronto.
+
+exit
