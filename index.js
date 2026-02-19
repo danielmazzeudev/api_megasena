@@ -6,6 +6,8 @@ const path = require('path');
 const app = express();
 const PORT = 4000;
 
+const currentVersion = "8.0.0";
+
 app.use(cors());
 
 app.get('/', (req, res) => {
@@ -23,6 +25,11 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/version', (req, res) => {
+    res.json({ version: currentVersion });
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port:${PORT}`);
+    console.log(`Current version: ${currentVersion}`);
 });
