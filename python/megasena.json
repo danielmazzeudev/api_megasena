@@ -62473,5 +62473,26 @@
         "is_accumulated": true,
         "accumulated_prize": 104043083.35,
         "estimated_next_prize": 116000000.0
+    },
+    {
+        "draw_number": 2976,
+        "draw_date": "24/02/2026",
+        "numbers": [
+            "07",
+            "09",
+            "10",
+            "21",
+            "28",
+            "43"
+        ],
+        "winners_4_numbers": 8973,
+        "winners_5_numbers": 136,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 681.85,
+        "prize_value_5_numbers": 27292.5,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 115463944.59,
+        "estimated_next_prize": 130000000.0
     }
 ]
