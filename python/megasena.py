@@ -16,28 +16,28 @@ def fetch_mega_sena_history():
                 if complete_history:
                     last_saved = max(item.get('draw_number', 0) for item in complete_history)
                     start_draw = last_saved + 1
-                    print(f"Arquivo encontrado. Último sorteio: {last_saved}. Retomando de: {start_draw}")
+                    print(f"Existing file found. Last draw: {last_saved}. Starting at: {start_draw}")
         except Exception as e:
-            print(f"Erro ao ler arquivo: {e}")
+            print(f"Error reading existing file: {e}")
 
     try:
         latest_response = requests.get(base_url, timeout=15)
         if latest_response.status_code == 200:
             data_list = latest_response.json()
-            end_draw = data_list[0].get("concurso")
+            latest_draw = data_list[0].get("concurso")
+            end_draw = latest_draw
         else:
-            print("Não foi possível determinar o último sorteio.")
+            print("Could not determine the latest draw.")
             return
     except Exception as e:
-        print(f"Erro de conexão: {e}")
+        print(f"Connection error: {e}")
         return
 
     if start_draw > end_draw:
-        print("Seu histórico já está atualizado.")
+        print("Your history is already up to date.")
         return
 
-    print(f"Atualizando de {start_draw} até {end_draw}")
-    print(f"{'CONCURSO':<10} | {'DATA':<12} | {'DEZENAS':<20} | {'GANHADORES (6)'}")
+    print(f"Updating from draw {start_draw} to {end_draw}")
     print("-" * 75)
 
     for draw_number in range(start_draw, end_draw + 1):
@@ -52,8 +52,15 @@ def fetch_mega_sena_history():
                     "draw_number": data.get("concurso"),
                     "draw_date": data.get("data"),
                     "numbers": data.get("dezenas"),
+                    "winners_4_numbers": awards[2].get("ganhadores") if len(awards) > 2 else 0,
+                    "winners_5_numbers": awards[1].get("ganhadores") if len(awards) > 1 else 0,
                     "winners_6_numbers": awards[0].get("ganhadores") if len(awards) > 0 else 0,
+                    "prize_value_4_numbers": awards[2].get("valorPremio") if len(awards) > 2 else 0,
+                    "prize_value_5_numbers": awards[1].get("valorPremio") if len(awards) > 1 else 0,
+                    "prize_value_6_numbers": awards[0].get("valorPremio") if len(awards) > 0 else 0,
                     "is_accumulated": data.get("acumulou", False),
+                    "accumulated_prize": data.get("valorAcumuladoProximoConcurso", 0.0),
+                    "estimated_next_prize": data.get("valorEstimadoProximoConcurso", 0.0)
                 }
                 
                 complete_history.append(item)
@@ -61,24 +68,20 @@ def fetch_mega_sena_history():
                 with open(output_filename, 'w', encoding='utf-8') as f:
                     json.dump(complete_history, f, ensure_ascii=False, indent=4)
                 
-                numbers_str = "-".join(item['numbers'])
-                winners = item['winners_6_numbers']
-                status = f"{winners} ganhador(es)" if winners > 0 else "ACUMULOU"
-                
-                print(f"{item['draw_number']:<10} | {item['draw_date']:<12} | {numbers_str:<20} | {status}")
+                print(f"Draw [{item['draw_number']}] saved.")
 
             elif response.status_code == 429:
-                print("\nLimite de requisições atingido. Aguardando 30 segundos...")
+                print("Rate limit reached. Waiting 30 seconds...")
                 time.sleep(30)
             
             time.sleep(0.1)
 
         except Exception as e:
-            print(f"\nFalha no sorteio {draw_number}: {e}")
+            print(f"Failed at draw {draw_number}: {e}")
             continue
 
     print("-" * 75)
-    print(f"Atualização concluída! Total de registros: {len(complete_history)}")
+    print(f"Update complete! Total records: {len(complete_history)}")
 
 if __name__ == "__main__":
     fetch_mega_sena_history()
