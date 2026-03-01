@@ -62515,5 +62515,26 @@
         "is_accumulated": true,
         "accumulated_prize": 127630932.47,
         "estimated_next_prize": 145000000.0
+    },
+    {
+        "draw_number": 2978,
+        "draw_date": "28/02/2026",
+        "numbers": [
+            "06",
+            "09",
+            "13",
+            "20",
+            "42",
+            "50"
+        ],
+        "winners_4_numbers": 9449,
+        "winners_5_numbers": 129,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 859.23,
+        "prize_value_5_numbers": 38181.97,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 142786236.93,
+        "estimated_next_prize": 160000000.0
     }
 ]
