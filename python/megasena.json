@@ -62557,5 +62557,26 @@
         "is_accumulated": false,
         "accumulated_prize": 36227396.57,
         "estimated_next_prize": 45000000.0
+    },
+    {
+        "draw_number": 2980,
+        "draw_date": "05/03/2026",
+        "numbers": [
+            "03",
+            "14",
+            "27",
+            "33",
+            "43",
+            "45"
+        ],
+        "winners_4_numbers": 5245,
+        "winners_5_numbers": 77,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 583.2,
+        "prize_value_5_numbers": 24100.61,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 41937385.42,
+        "estimated_next_prize": 50000000.0
     }
 ]
