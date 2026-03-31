@@ -62704,5 +62704,89 @@
         "is_accumulated": true,
         "accumulated_prize": 3121356.24,
         "estimated_next_prize": 8000000.0
+    },
+    {
+        "draw_number": 2987,
+        "draw_date": "21/03/2026",
+        "numbers": [
+            "16",
+            "17",
+            "20",
+            "28",
+            "46",
+            "47"
+        ],
+        "winners_4_numbers": 1950,
+        "winners_5_numbers": 23,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1269.66,
+        "prize_value_5_numbers": 65305.07,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 7742945.59,
+        "estimated_next_prize": 13000000.0
+    },
+    {
+        "draw_number": 2988,
+        "draw_date": "24/03/2026",
+        "numbers": [
+            "21",
+            "23",
+            "28",
+            "36",
+            "57",
+            "58"
+        ],
+        "winners_4_numbers": 1753,
+        "winners_5_numbers": 24,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1316.91,
+        "prize_value_5_numbers": 58355.02,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 12052239.22,
+        "estimated_next_prize": 17000000.0
+    },
+    {
+        "draw_number": 2989,
+        "draw_date": "26/03/2026",
+        "numbers": [
+            "06",
+            "14",
+            "28",
+            "31",
+            "56",
+            "59"
+        ],
+        "winners_4_numbers": 2443,
+        "winners_5_numbers": 44,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 985.14,
+        "prize_value_5_numbers": 33183.44,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 31300587.19,
+        "estimated_next_prize": 40000000.0
+    },
+    {
+        "draw_number": 2990,
+        "draw_date": "28/03/2026",
+        "numbers": [
+            "06",
+            "14",
+            "18",
+            "29",
+            "30",
+            "44"
+        ],
+        "winners_4_numbers": 3814,
+        "winners_5_numbers": 45,
+        "winners_6_numbers": 1,
+        "prize_value_4_numbers": 938.65,
+        "prize_value_5_numbers": 48264.27,
+        "prize_value_6_numbers": 37983331.58,
+        "is_accumulated": false,
+        "accumulated_prize": 0.0,
+        "estimated_next_prize": 3500000.0
     }
 ]
