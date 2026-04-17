@@ -62914,5 +62914,26 @@
         "is_accumulated": true,
         "accumulated_prize": 45257757.42,
         "estimated_next_prize": 52000000.0
+    },
+    {
+        "draw_number": 2997,
+        "draw_date": "16/04/2026",
+        "numbers": [
+            "14",
+            "20",
+            "32",
+            "37",
+            "39",
+            "42"
+        ],
+        "winners_4_numbers": 2920,
+        "winners_5_numbers": 33,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1190.33,
+        "prize_value_5_numbers": 63897.88,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 51745849.63,
+        "estimated_next_prize": 60000000.0
     }
 ]
