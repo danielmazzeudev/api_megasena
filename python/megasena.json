@@ -63061,5 +63061,26 @@
         "is_accumulated": true,
         "accumulated_prize": 3199851.71,
         "estimated_next_prize": 8000000.0
+    },
+    {
+        "draw_number": 3004,
+        "draw_date": "05/05/2026",
+        "numbers": [
+            "01",
+            "05",
+            "07",
+            "22",
+            "50",
+            "59"
+        ],
+        "winners_4_numbers": 2740,
+        "winners_5_numbers": 32,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 758.29,
+        "prize_value_5_numbers": 39390.35,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 31128888.97,
+        "estimated_next_prize": 36000000.0
     }
 ]
