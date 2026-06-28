@@ -63250,5 +63250,257 @@
         "is_accumulated": true,
         "accumulated_prize": 5704417.6,
         "estimated_next_prize": 10000000.0
+    },
+    {
+        "draw_number": 3013,
+        "draw_date": "30/05/2026",
+        "numbers": [
+            "02",
+            "14",
+            "21",
+            "22",
+            "34",
+            "44"
+        ],
+        "winners_4_numbers": 2918,
+        "winners_5_numbers": 46,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 861.7,
+        "prize_value_5_numbers": 33161.69,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 10398071.91,
+        "estimated_next_prize": 16000000.0
+    },
+    {
+        "draw_number": 3014,
+        "draw_date": "02/06/2026",
+        "numbers": [
+            "27",
+            "30",
+            "35",
+            "40",
+            "44",
+            "58"
+        ],
+        "winners_4_numbers": 1782,
+        "winners_5_numbers": 24,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1272.01,
+        "prize_value_5_numbers": 57298.0,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 22675428.22,
+        "estimated_next_prize": 32000000.0
+    },
+    {
+        "draw_number": 3015,
+        "draw_date": "06/06/2026",
+        "numbers": [
+            "09",
+            "18",
+            "26",
+            "31",
+            "53",
+            "58"
+        ],
+        "winners_4_numbers": 4932,
+        "winners_5_numbers": 68,
+        "winners_6_numbers": 1,
+        "prize_value_4_numbers": 841.73,
+        "prize_value_5_numbers": 37037.29,
+        "prize_value_6_numbers": 30424768.27,
+        "is_accumulated": false,
+        "accumulated_prize": 0.0,
+        "estimated_next_prize": 3500000.0
+    },
+    {
+        "draw_number": 3016,
+        "draw_date": "09/06/2026",
+        "numbers": [
+            "11",
+            "19",
+            "33",
+            "52",
+            "55",
+            "60"
+        ],
+        "winners_4_numbers": 2566,
+        "winners_5_numbers": 40,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 671.27,
+        "prize_value_5_numbers": 26124.46,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 3215317.75,
+        "estimated_next_prize": 8000000.0
+    },
+    {
+        "draw_number": 3017,
+        "draw_date": "11/06/2026",
+        "numbers": [
+            "04",
+            "06",
+            "26",
+            "28",
+            "32",
+            "45"
+        ],
+        "winners_4_numbers": 2575,
+        "winners_5_numbers": 36,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 737.17,
+        "prize_value_5_numbers": 31988.67,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 6758677.52,
+        "estimated_next_prize": 12000000.0
+    },
+    {
+        "draw_number": 3018,
+        "draw_date": "14/06/2026",
+        "numbers": [
+            "05",
+            "06",
+            "17",
+            "27",
+            "57",
+            "58"
+        ],
+        "winners_4_numbers": 3082,
+        "winners_5_numbers": 30,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 801.69,
+        "prize_value_5_numbers": 49965.61,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 11370887.78,
+        "estimated_next_prize": 16000000.0
+    },
+    {
+        "draw_number": 3019,
+        "draw_date": "16/06/2026",
+        "numbers": [
+            "05",
+            "31",
+            "32",
+            "48",
+            "54",
+            "56"
+        ],
+        "winners_4_numbers": 1987,
+        "winners_5_numbers": 24,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1133.87,
+        "prize_value_5_numbers": 56950.91,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 28405702.09,
+        "estimated_next_prize": 36000000.0
+    },
+    {
+        "draw_number": 3020,
+        "draw_date": "18/06/2026",
+        "numbers": [
+            "06",
+            "09",
+            "17",
+            "27",
+            "29",
+            "45"
+        ],
+        "winners_4_numbers": 4314,
+        "winners_5_numbers": 59,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 600.94,
+        "prize_value_5_numbers": 26657.14,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 33244997.38,
+        "estimated_next_prize": 42000000.0
+    },
+    {
+        "draw_number": 3021,
+        "draw_date": "20/06/2026",
+        "numbers": [
+            "16",
+            "19",
+            "22",
+            "24",
+            "46",
+            "58"
+        ],
+        "winners_4_numbers": 3942,
+        "winners_5_numbers": 65,
+        "winners_6_numbers": 1,
+        "prize_value_4_numbers": 840.14,
+        "prize_value_5_numbers": 30910.5,
+        "prize_value_6_numbers": 39427096.38,
+        "is_accumulated": false,
+        "accumulated_prize": 0.0,
+        "estimated_next_prize": 3500000.0
+    },
+    {
+        "draw_number": 3022,
+        "draw_date": "23/06/2026",
+        "numbers": [
+            "02",
+            "03",
+            "08",
+            "11",
+            "17",
+            "22"
+        ],
+        "winners_4_numbers": 4426,
+        "winners_5_numbers": 102,
+        "winners_6_numbers": 1,
+        "prize_value_4_numbers": 340.54,
+        "prize_value_5_numbers": 8964.74,
+        "prize_value_6_numbers": 2813548.14,
+        "is_accumulated": false,
+        "accumulated_prize": 0.0,
+        "estimated_next_prize": 3500000.0
+    },
+    {
+        "draw_number": 3023,
+        "draw_date": "25/06/2026",
+        "numbers": [
+            "22",
+            "25",
+            "30",
+            "31",
+            "39",
+            "60"
+        ],
+        "winners_4_numbers": 807,
+        "winners_5_numbers": 7,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 1674.92,
+        "prize_value_5_numbers": 117144.19,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 2523105.57,
+        "estimated_next_prize": 7000000.0
+    },
+    {
+        "draw_number": 3024,
+        "draw_date": "27/06/2026",
+        "numbers": [
+            "13",
+            "39",
+            "42",
+            "44",
+            "47",
+            "49"
+        ],
+        "winners_4_numbers": 2123,
+        "winners_5_numbers": 38,
+        "winners_6_numbers": 0,
+        "prize_value_4_numbers": 961.71,
+        "prize_value_5_numbers": 32595.94,
+        "prize_value_6_numbers": 0.0,
+        "is_accumulated": true,
+        "accumulated_prize": 17427418.62,
+        "estimated_next_prize": 23000000.0
     }
 ]
