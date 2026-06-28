@@ -2,28 +2,34 @@
 
 set -euo pipefail
 
-REPO_DIR="/home/danielmazzeu/Documents/Github/api_megasena"
-PYTHON_PATH="/usr/bin/python3"
-SCRIPT_PATH="$REPO_DIR/python/megasena.py"
-LOG_PATH="$REPO_DIR/python/auto.log"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+PYTHON_PATH="$(command -v python3)"
+SCRIPT_PATH="$SCRIPT_DIR/megasena.py"
+LOG_PATH="$SCRIPT_DIR/auto.log"
 
-cd "$REPO_DIR" || exit
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export HOME="${HOME:-/home/daniel}"
 
-echo "Iniciando script Python em $(date)..." >> "$LOG_PATH"
+cd "$REPO_DIR" || exit 1
 
-"$PYTHON_PATH" "$SCRIPT_PATH" >> "$LOG_PATH" 2>&1 && {
-    echo "Python finalizado com sucesso. Iniciando Git Push..." >> "$LOG_PATH"
+echo "=== Iniciando em $(date '+%Y-%m-%d %H:%M:%S') ===" >> "$LOG_PATH"
+
+if "$PYTHON_PATH" "$SCRIPT_PATH" >> "$LOG_PATH" 2>&1; then
+    echo "Python finalizado com sucesso. Verificando alteracoes no Git..." >> "$LOG_PATH"
 
     git add python/megasena.json
-    
+
     if git diff --cached --quiet -- python/megasena.json; then
-        echo "Nenhuma mudança detectada nos arquivos. Pulando push." >> "$LOG_PATH"
+        echo "Nenhuma mudanca detectada. Push ignorado." >> "$LOG_PATH"
     else
-        git commit -m "Auto-commit: atualização via script em $(date '+%Y-%m-%d %H:%M:%S')" >> "$LOG_PATH" 2>&1
+        git commit -m "Auto-commit: atualizacao via script em $(date '+%Y-%m-%d %H:%M:%S')" >> "$LOG_PATH" 2>&1
         git push origin main >> "$LOG_PATH" 2>&1
-        echo "Git push concluído com sucesso!" >> "$LOG_PATH"
+        echo "Git push concluido com sucesso." >> "$LOG_PATH"
     fi
-} || {
-    echo "Erro: O script Python falhou ou foi interrompido. Git Push cancelado." >> "$LOG_PATH"
+else
+    echo "Erro: script Python falhou. Git push cancelado." >> "$LOG_PATH"
     exit 1
-}
+fi
+
+echo "=== Finalizado em $(date '+%Y-%m-%d %H:%M:%S') ===" >> "$LOG_PATH"
